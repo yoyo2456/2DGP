@@ -304,7 +304,7 @@ def draw(frame_time):
 
     for in_tile in in_tiles:
         in_tile.draw()
-        in_tile.draw_bb()
+        #in_tile.draw_bb()
 
 
 
@@ -336,7 +336,7 @@ def draw(frame_time):
 
 
     player.draw()
-    player.draw_bb()
+    #player.draw_bb()
     ai_1.draw()
     ai_2.draw()
     ai_3.draw()
