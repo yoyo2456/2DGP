@@ -11,7 +11,7 @@ import os
 class Player:
 
     STANDING,RIGHT_MOVE,DOWN_MOVE,LEFT_MOVE,UP_MOVE=0,1,2,3,4
-    ATTACK,SKILL=5,6
+
 
     PIXEL_PER_METER = (10.0 / 0.3)
     RUN_SPEED_KMPH = 20.0
@@ -31,7 +31,7 @@ class Player:
         self.frame = random.randint(0, 7)
         self.total_frames = 0.0
         self.dir = 1
-        self.image = load_image('resource\\player.png')
+        self.PlayerMoveImage = load_image('resource\\player.png')
 
         self.frame_y = 0
         self.frame_x = 0
@@ -171,7 +171,7 @@ class Player:
 
 
     def draw(self):
-        self.image.clip_draw(self.frame * 40, self.state * 30, 40, 30, self.x, self.y)
+        self.PlayerMoveImage.clip_draw(self.frame * 40, self.state * 30, 40, 30, self.x, self.y)
 
 
 
